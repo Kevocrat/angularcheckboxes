@@ -7,7 +7,9 @@ if (!academy.form) {
 
 academy.form.FormController = function () {
     var vm = this;
-    vm.data = [];
+    vm.data = [{
+        value: false
+    }];
     vm.submit = submit;
     vm.form = { "formtitle" :"test form",
         "questions" : [
