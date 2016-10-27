@@ -1,0 +1,13 @@
+<h2 layout="row" layout-align="center">Apotek</h2>
+
+<div layout="row" layout-align="center center">
+    <form name="myForm" ng-submit="vm.submit(vm.data)">
+
+        <div ng-repeat="question in vm.form.questions">
+            <div ng-if="question.type === 'check'">
+                <form-check question="question" model="vm.data[$index]"></form-check>
+            </div>
+        </div>
+        <input type="submit"/>
+    </form>
+</div>
